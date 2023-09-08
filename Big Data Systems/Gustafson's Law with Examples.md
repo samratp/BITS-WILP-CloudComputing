@@ -1,8 +1,6 @@
-Gustafson's Law is a principle in parallel computing that offers an optimistic viewpoint on the scalability of parallel algorithms. It focuses on the potential benefits of parallelization as problem sizes increase. Unlike Amdahl's Law, which emphasizes the limitations imposed by non-parallelizable portions of a program, Gustafson's Law suggests that as the problem size grows, the portion of the program that can be parallelized becomes more significant compared to the non-parallelizable portion.
+Gustafson's Law provides an optimistic perspective on the scalability of parallel algorithms. It suggests that as problem sizes increase, parallel computing can offer substantial performance improvements by efficiently handling larger workloads. The law is expressed by the formula:
 
-The formula for Gustafson's Law is:
-
-$\[S = P + N \cdot (1 - P)\]$
+$\[S = P \cdot N + (1 - P)\]$
 
 Where:
 - \(S\) is the speedup of the program.
@@ -21,15 +19,15 @@ Suppose you have an image rendering program where applying filters (which is par
 
 2. **Parallel Version:**
    - Assume you can parallelize 70% of the workload.
-   - So, \(P = 0.7\) and \(1 - P = 0.3\).
+   - So, \(P = 0.70\) and \(1 - P = 0.30\).
 
    - With 4 processors:
-     - Speedup = $\(0.7 + 4 \cdot 0.3 = 2.9\)$ times faster.
-     - Total time: $\(\frac{100}{2.9} \approx 34.5\)$ units.
+     - Speedup = $\(0.70 \cdot 4 + 0.30 = 2.80 + 0.30 = 3.10\)$ times faster.
+     - Total time: $\(\frac{100}{3.10} \approx 32.26\)$ units.
 
    - With 8 processors:
-     - Speedup = $\(0.7 + 8 \cdot 0.3 = 3.9\)$ times faster.
-     - Total time: $\(\frac{100}{3.9} \approx 25.6\)$ units.
+     - Speedup = $\(0.70 \cdot 8 + 0.30 = 5.60 + 0.30 = 5.90\)$ times faster.
+     - Total time: $\(\frac{100}{5.90} \approx 16.95\)$ units.
 
 **Example 2: Weather Simulation**
 
@@ -41,14 +39,14 @@ Consider a weather simulation program where computing the dynamics of the atmosp
 
 2. **Parallel Version:**
    - Assume you can parallelize 80% of the workload.
-   - So, \(P = 0.8\) and \(1 - P = 0.2\).
+   - So, \(P = 0.80\) and \(1 - P = 0.20\).
 
    - With 4 processors:
-     - Speedup = $\(0.8 + 4 \cdot 0.2 = 1.6\)$ times faster.
-     - Total time: $\(\frac{1000}{1.6} \approx 625\)$ units.
+     - Speedup = $\(0.80 \cdot 4 + 0.20 = 3.20 + 0.20 = 3.40\)$ times faster.
+     - Total time: $\(\frac{1000}{3.40} \approx 294.12\)$ units.
 
    - With 8 processors:
-     - Speedup = $\(0.8 + 8 \cdot 0.2 = 2.2\)$ times faster.
-     - Total time: $\(\frac{1000}{2.2} \approx 454.5\)$ units.
+     - Speedup = $\(0.80 \cdot 8 + 0.20 = 6.40 + 0.20 = 6.60\)$ times faster.
+     - Total time: $\(\frac{1000}{6.60} \approx 151.52\)$ units.
 
-These examples demonstrate how Gustafson's Law provides an optimistic perspective on parallelization, suggesting that as problem sizes increase, parallel computing can offer significant performance improvements by efficiently handling larger workloads. This contrasts with Amdahl's Law, which emphasizes the limitation imposed by non-parallelizable portions of a program.
+These examples demonstrate how Gustafson's Law provides an optimistic perspective on parallelization. It suggests that as problem sizes increase, parallel computing can offer significant performance improvements by efficiently handling larger workloads. This is in contrast to Amdahl's Law, which emphasizes the limitation imposed by non-parallelizable portions of a program.
