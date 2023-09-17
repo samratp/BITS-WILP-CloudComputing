@@ -1,4 +1,4 @@
-The `pthread_join` function is used to wait for a specific thread to finish its execution before proceeding with the rest of the program. It allows the calling thread to synchronize with the completion of another thread's execution. Here is the function signature:
+pThe `pthread_join` function is used to wait for a specific thread to finish its execution before proceeding with the rest of the program. It allows the calling thread to synchronize with the completion of another thread's execution. Here is the function signature:
 
 ```c
 int pthread_join(pthread_t thread, void **retval);
