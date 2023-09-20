@@ -149,3 +149,16 @@ int main(int argc, char const *argv[]) {
    - `memset()`: Fills `serv_addr` with zeros.
 
 6. **Convert IPv
+
+4 Address**:
+   - `inet_pton()`: Converts IP address from text to binary form.
+
+7. **Connect to Server**:
+   - `connect()`: Establishes a connection to the server.
+
+8. **Send and Receive Messages**:
+   - `send()`: Sends data to the server.
+   - `read()`: Receives data from the server.
+   - The client runs in an infinite loop, continuously sending and receiving messages.
+
+Remember to compile and run the server and client separately in different terminal windows. The server should be running before the client connects.
