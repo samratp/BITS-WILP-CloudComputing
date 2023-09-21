@@ -13,11 +13,7 @@ Distance-vector routing protocols operate based on the number of hops (or distan
    - **Description**: EIGRP is an advanced Cisco proprietary protocol that incorporates features of both distance-vector and link-state routing. It uses a composite metric that includes factors like bandwidth, delay, reliability, and load.
    - **Characteristics**: Balances simplicity and accuracy, provides rapid convergence. Supports both IP and IPv6.
 
-4. **BGP (Border Gateway Protocol)**:
-   - **Description**: BGP is an Exterior Gateway Protocol (EGP) used to route traffic between different autonomous systems (ASes) on the internet. It is considered a path-vector protocol, which is a more advanced routing paradigm than pure distance-vector.
-   - **Characteristics**: Designed for routing between different networks on the internet. Focuses on policy-based routing and has complex route selection criteria.
-
-5. **H-Route**:
+4. **H-Route**:
    - **Description**: H-Route is a simple distance-vector protocol used in some specific networks. It is not as widely used as RIP or IGRP.
 
 Key Characteristics of Distance-Vector Protocols:
