@@ -19,7 +19,7 @@ Using the formula:
 
 $\[EstimatedRTT = (1 - 0.2) \cdot 100 + 0.2 \cdot 120\]$
 
-$\[EstimatedRTT \approx 104 + 24 \approx 128 \text{ ms}\]$
+$\[EstimatedRTT \approx 80 + 24 \approx 104 \text{ ms}\]$
 
 In this example, the new estimate of the round-trip time $(\(EstimatedRTT\))$ is approximately 128 ms.
 
