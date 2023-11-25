@@ -1,6 +1,5 @@
----
 
-**2. Hardware Assisted Virtualization**:
+**Hardware Assisted Virtualization**:
 
 **Overview**:
 
