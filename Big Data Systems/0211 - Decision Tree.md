@@ -20,9 +20,9 @@ A Decision Tree is a popular supervised machine learning algorithm used for both
 
 4. **Purity Measures:**
    - **Gini Impurity (for Classification):**
-     \[ Gini(p) = 1 - \sum_{i=1}^{n} p_i^2 \]
+     $\[ Gini(p) = 1 - \sum_{i=1}^{n} p_i^2 \]$
    - **Mean Squared Error (for Regression):**
-     \[ MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \bar{y})^2 \]
+     $\[ MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \bar{y})^2 \]$
    - Decision Trees aim to minimize these measures during the splitting process.
 
 ### Construction Process:
