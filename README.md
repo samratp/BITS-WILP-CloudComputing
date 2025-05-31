@@ -1,5 +1,5 @@
-# BITS-WILP-CloudComputing
-BITS WILP - Cloud Computing Notes
+# BITS-PILANI-WILP-CloudComputing
+BITS PILANI WILP - Cloud Computing Notes
 
 
 -------------------
